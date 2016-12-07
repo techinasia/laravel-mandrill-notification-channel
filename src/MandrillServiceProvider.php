@@ -21,7 +21,7 @@ class MandrillServiceProvider extends ServiceProvider
                 return new Mandrill($apiKey);
             });
 
-        $source = realpath(__DIR__.'/../config/mandrill.php');
+        $source = realpath(__DIR__.'/../config/services.php');
 
         $this->mergeConfigFrom($source, 'services.mandrill');
     }
