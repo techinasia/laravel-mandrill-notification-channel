@@ -1,0 +1,43 @@
+{
+    "name": "techinasia/laravel-mandrill-notification-channel",
+    "description": "Mandrill Notifications Channel for Laravel 5.3",
+    "homepage": "https://github.com/techinasia/laravel-mandrill-notification-channel",
+    "keywords": ["laravel", "notifications", "mandrill", "channel"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Melvin Lee",
+            "email": "melvin@techinasia.com",
+            "homepage": "http://zy.sg",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.4",
+        "illuminate/notifications": "^5.3",
+        "illuminate/queue": "^5.1|^5.2|^5.3",
+        "illuminate/support": "^5.1|^5.2|^5.3",
+        "mandrill/mandrill": "^1.0"
+    },
+    "require-dev": {
+        "mockery/mockery": "^0.9.5",
+        "orchestra/testbench": "^3.3",
+        "phpunit/phpunit": "4.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "NotificationChannels\\Mandrill\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "NotificationChannels\\Mandrill\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
