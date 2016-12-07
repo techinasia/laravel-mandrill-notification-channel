@@ -20,7 +20,15 @@ class MandrillServiceProvider extends ServiceProvider
                 $apiKey = config('services.mandrill.secret');
                 return new Mandrill($apiKey);
             });
+    }
 
+    /**
+     * Register bindings in the container.
+     *
+     * @return void
+     */
+    public function register()
+    {
         $source = realpath(__DIR__.'/../config/services.php');
 
         $this->mergeConfigFrom($source, 'services.mandrill');
