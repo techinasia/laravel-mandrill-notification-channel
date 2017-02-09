@@ -1,4 +1,10 @@
 # Mandrill Notification Channel for Laravel
+
+[![Dependency Status](https://gemnasium.com/techinasia/laravel-mandrill-notification-channel.svg)](https://gemnasium.com/techinasia/laravel-mandrill-notification-channel)
+[![Build Status](https://travis-ci.org/techinasia/laravel-mandrill-notification-channel.svg)](https://travis-ci.org/techinasia/laravel-mandrill-notification-channel)
+[![Coverage Status](https://coveralls.io/repos/github/techinasia/laravel-mandrill-notification-channel/badge.svg)](https://coveralls.io/github/techinasia/laravel-mandrill-notification-channel)
+[![StyleCI Status](https://styleci.io/repos/75810155/shield)](https://styleci.io/repos/75810155)
+
 > Use Laravel 5.3 notifications to send mail via Mandrill.
 
 ## Contents
