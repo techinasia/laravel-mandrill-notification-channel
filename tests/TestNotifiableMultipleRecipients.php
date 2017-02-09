@@ -24,7 +24,7 @@ class TestNotifiableMultipleRecipients
                 'email' => 'b@b.com',
                 'name' => 'User B',
                 'type' => 'cc',
-            ]
+            ],
         ];
     }
 }

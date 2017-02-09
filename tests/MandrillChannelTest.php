@@ -6,7 +6,7 @@ use Mockery;
 use NotificationChannels\Mandrill\MandrillChannel;
 use Orchestra\Testbench\TestCase;
 
-class MandillChannelTest extends TestCase
+class MandrillChannelTest extends TestCase
 {
     public function setUp()
     {

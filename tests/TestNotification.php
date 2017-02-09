@@ -9,6 +9,6 @@ class TestNotification extends Notification
 {
     public function toMandrill($notifiable)
     {
-        return (new MandrillMessage());
+        return new MandrillMessage();
     }
 }

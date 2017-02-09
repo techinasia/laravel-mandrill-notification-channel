@@ -56,6 +56,7 @@ class MandrillMessage implements Arrayable
     public function async($value = true)
     {
         $this->async = $value;
+
         return $this;
     }
 
@@ -68,6 +69,7 @@ class MandrillMessage implements Arrayable
     public function ipPool($name)
     {
         $this->ipPool = $name;
+
         return $this;
     }
 
@@ -120,7 +122,7 @@ class MandrillMessage implements Arrayable
             'template_content' => $this->templateContent,
             'async' => $this->async,
             'ip_pool' => $this->ipPool,
-            'send_at' => $this->sendAt
+            'send_at' => $this->sendAt,
         ];
     }
 }

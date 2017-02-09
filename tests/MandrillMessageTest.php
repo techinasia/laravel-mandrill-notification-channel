@@ -4,7 +4,7 @@ namespace NotificationChannels\Mandrill\Tests;
 
 use NotificationChannels\Mandrill\MandrillMessage;
 
-class MandillMessageTest extends \PHPUnit_Framework_TestCase
+class MandrillMessageTest extends \PHPUnit_Framework_TestCase
 {
     /** @test */
     public function testAsync()

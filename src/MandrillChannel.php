@@ -54,7 +54,7 @@ class MandrillChannel
 
         $arguments = [];
 
-        if (!empty($message['template_name'])) {
+        if (! empty($message['template_name'])) {
             $method = 'sendTemplate';
             $arguments[] = Arr::get($message, 'template_name');
             $arguments[] = Arr::get($message, 'template_content', []);
