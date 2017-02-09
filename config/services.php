@@ -13,7 +13,7 @@ return [
     */
     'forward' => [
         'enabled' => false,
-        'email' => ''
-    ]
+        'email' => '',
+    ],
 
 ];

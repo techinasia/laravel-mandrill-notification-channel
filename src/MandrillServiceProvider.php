@@ -18,6 +18,7 @@ class MandrillServiceProvider extends ServiceProvider
             ->needs(Mandrill::class)
             ->give(function () {
                 $apiKey = config('services.mandrill.secret');
+
                 return new Mandrill($apiKey);
             });
     }
