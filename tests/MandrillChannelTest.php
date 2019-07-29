@@ -93,4 +93,19 @@ class MandrillChannelTest extends TestCase
 
         $this->channel->send(new TestNotifiable(), new TestNotification());
     }
+
+    /** @test */
+    public function testSendWithFromNameAndEmail()
+    {
+        $this->mandrillMessages->shouldReceive('send')->with([
+            'from_email' => TestNotificationWithFromNameAndEmail::FROM_EMAIL,
+            'from_name' => TestNotificationWithFromNameAndEmail::FROM_NAME,
+            'to' => [[
+                'email' => 'a@b.com',
+                'name' => 'XYZ User'
+            ]],
+        ], null, null, null);
+
+        $this->channel->send(new TestNotifiable(), new TestNotificationWithFromNameAndEmail());
+    }
 }

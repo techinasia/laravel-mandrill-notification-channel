@@ -37,11 +37,11 @@ class MandrillChannel
             ->toArray();
 
         // Inject global "From" address if it's not in the message.
-        if (empty($message['from_email']) && ! empty(config('mail.from.address'))) {
+        if (empty($message['message']['from_email']) && ! empty(config('mail.from.address'))) {
             Arr::set($message, 'message.from_email', config('mail.from.address'));
         }
 
-        if (empty($message['from_name']) && ! empty(config('mail.from.name'))) {
+        if (empty($message['message']['from_name']) && ! empty(config('mail.from.name'))) {
             Arr::set($message, 'message.from_name', config('mail.from.name'));
         }
 
